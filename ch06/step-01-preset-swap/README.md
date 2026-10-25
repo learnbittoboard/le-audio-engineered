@@ -6,12 +6,10 @@ Move the unicast pair from the default configurable BAP configuration to the exp
 
 ## Before we start
 
-Work from `~/ncs-course` with the toolchain environment loaded:
+Work from `~/ncs-course` in a toolchain terminal in VS Code:
 
 ```bash
 cd ~/ncs-course
-nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script > /tmp/ncs-env.sh
-source /tmp/ncs-env.sh
 ```
 
 Role map: `unicast_client` is the gateway (transmitter, `CONFIG_AUDIO_DEV` 2). `unicast_server` is the headset (receiver, `CONFIG_AUDIO_DEV` 1). Transport is CIS in both builds.

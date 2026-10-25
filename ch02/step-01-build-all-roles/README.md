@@ -6,11 +6,10 @@ Build every role image of the nrf_audio application (unicast client, unicast ser
 
 ## Commands
 
-Activate the toolchain environment, then run from the SDK root at `~/ncs-course`:
+Run from the SDK root at `~/ncs-course`, in a toolchain terminal in VS Code (the nRF Connect terminal profile, with the pinned v3.4.1 bundle on the path):
 
 ```bash
 export PATH="$HOME/.local/bin:$HOME/ncs-course/tools:$PATH"
-eval "$(nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script)"
 
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp \
   -d build-unicast_server nrf/applications/nrf_audio -- \

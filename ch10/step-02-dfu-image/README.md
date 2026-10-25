@@ -8,11 +8,9 @@ Rebuild one role, the unicast server headset, as a release build with MCUboot en
 
 ## Commands
 
-Run from ~/ncs-course with the toolchain environment loaded:
+Run from ~/ncs-course in a toolchain terminal in VS Code:
 
 ```bash
-eval "$(nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script)"
-
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-unicast_server-release-dfu nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=unicast_server/overlay-unicast_server.conf -DFILE_SUFFIX=release -DSB_CONFIG_BOOTLOADER_MCUBOOT=y
 
 cat build-unicast_server-release-dfu/domains.yaml

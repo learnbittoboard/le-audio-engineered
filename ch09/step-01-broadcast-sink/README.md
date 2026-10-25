@@ -8,7 +8,7 @@ Role: `broadcast_sink` is the headset (receiver). `CONFIG_AUDIO_DEV=1`. Transpor
 
 ## Commands
 
-Run from `~/ncs-course` with the pinned toolchain environment loaded (`nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script`):
+Run from `~/ncs-course` in a toolchain terminal in VS Code:
 
 ```bash
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-broadcast_sink nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=broadcast_sink/overlay-broadcast_sink.conf

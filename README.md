@@ -14,7 +14,7 @@ Every chapter of the course has a directory here. Every step inside it is a smal
 
 ## Environment
 
-- nRF Connect SDK **v3.4.1** (Zephyr 4.4.2), toolchain via `nrfutil toolchain-manager`
+- nRF Connect SDK **v3.4.1** (Zephyr 4.4.2), toolchain via the nRF Connect for VS Code extension (pinned v3.4.1 bundle; commands run in its toolchain terminal in VS Code)
 - Board target: `nrf5340_audio_dk/nrf5340/cpuapp`
 - Reference application: `nrf/applications/nrf_audio` in the SDK tree
 - Hardware: **two** nRF5340 Audio DKs (PCA10121). Two boards is a requirement of the project, not an upgrade: a link and a broadcast both need a talker and a listener.

@@ -6,12 +6,10 @@ Change the system sample rate to 24 kHz and the frame duration to 7.5 ms on both
 
 ## Before we start
 
-Start from the Step 01 end state with its overlay line removed, so `git -C nrf diff` on the two role overlays is empty. Work from `~/ncs-course` with the toolchain environment loaded:
+Start from the Step 01 end state with its overlay line removed, so `git -C nrf diff` on the two role overlays is empty. Work from `~/ncs-course` in a toolchain terminal in VS Code:
 
 ```bash
 cd ~/ncs-course
-nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script > /tmp/ncs-env.sh
-source /tmp/ncs-env.sh
 ```
 
 Role map: `unicast_client` is the gateway (transmitter, `CONFIG_AUDIO_DEV` 2). `unicast_server` is the headset (receiver, `CONFIG_AUDIO_DEV` 1).

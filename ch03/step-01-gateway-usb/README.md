@@ -12,7 +12,6 @@ Run from the SDK root, `~/ncs-course`, with only Board A connected for the flash
 
 ```bash
 cd ~/ncs-course
-eval "$(nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script)"
 
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-unicast_client nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=unicast_client/overlay-unicast_client.conf
 

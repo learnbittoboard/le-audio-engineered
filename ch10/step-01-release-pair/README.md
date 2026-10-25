@@ -8,11 +8,9 @@ Build release images for both unicast roles of the pair, gateway and headset, us
 
 ## Commands
 
-Run from ~/ncs-course with the toolchain environment loaded:
+Run from ~/ncs-course in a toolchain terminal in VS Code:
 
 ```bash
-eval "$(nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script)"
-
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-unicast_client-release nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=unicast_client/overlay-unicast_client.conf -DFILE_SUFFIX=release
 
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-unicast_server-release nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=unicast_server/overlay-unicast_server.conf -DFILE_SUFFIX=release

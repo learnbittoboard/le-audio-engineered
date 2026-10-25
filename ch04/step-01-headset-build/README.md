@@ -6,7 +6,7 @@ Build the `nrf_audio` application as a unicast server (headset) for the nRF5340 
 
 ## Commands
 
-Run from the SDK root at `~/ncs-course`, with the toolchain environment loaded for NCS v3.4.1 (`nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script`):
+Run from the SDK root at `~/ncs-course`, in a toolchain terminal in VS Code:
 
 ```bash
 cat nrf/applications/nrf_audio/unicast_server/overlay-unicast_server.conf

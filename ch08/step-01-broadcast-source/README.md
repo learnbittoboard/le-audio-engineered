@@ -8,7 +8,7 @@ Role: `broadcast_source` is the gateway (transmitter). `CONFIG_AUDIO_DEV=2`. Tra
 
 ## Commands
 
-Run from `~/ncs-course` with the pinned toolchain environment loaded (`nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script`):
+Run from `~/ncs-course` in a toolchain terminal in VS Code:
 
 ```bash
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-broadcast_source nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=broadcast_source/overlay-broadcast_source.conf

@@ -8,11 +8,9 @@ Run the full bring up protocol cold and produce the product card. Protocol order
 
 ## Commands
 
-Builds, only if a build needs to be remade. Run from ~/ncs-course with the toolchain environment loaded. Add -DFILE_SUFFIX=release to every command for a release flavour capstone.
+Builds, only if a build needs to be remade. Run from ~/ncs-course in a toolchain terminal in VS Code. Add -DFILE_SUFFIX=release to every command for a release flavour capstone.
 
 ```bash
-eval "$(nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script)"
-
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-unicast_client nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=unicast_client/overlay-unicast_client.conf
 
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-unicast_server nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=unicast_server/overlay-unicast_server.conf

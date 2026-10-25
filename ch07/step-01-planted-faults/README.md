@@ -12,7 +12,7 @@ The three faults, with their full excerpts, diagnoses, fixes, and rebuild steps,
 
 ## Commands
 
-Every fix in this step is proven with the same pair of builds, run from `~/ncs-course` with the toolchain environment loaded (`nrfutil toolchain-manager env --ncs-version v3.4.1 --as-script`). The gateway is `unicast_client` (`CONFIG_AUDIO_DEV` 2) and the headset is `unicast_server` (`CONFIG_AUDIO_DEV` 1), both on `nrf5340_audio_dk/nrf5340/cpuapp` with CIS transport:
+Every fix in this step is proven with the same pair of builds, run from `~/ncs-course` in a toolchain terminal in VS Code. The gateway is `unicast_client` (`CONFIG_AUDIO_DEV` 2) and the headset is `unicast_server` (`CONFIG_AUDIO_DEV` 1), both on `nrf5340_audio_dk/nrf5340/cpuapp` with CIS transport:
 
 ```bash
 west build -p always --sysbuild -b nrf5340_audio_dk/nrf5340/cpuapp -d build-unicast_client nrf/applications/nrf_audio -- -DEXTRA_CONF_FILE=unicast_client/overlay-unicast_client.conf
